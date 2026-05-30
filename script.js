@@ -148,25 +148,3 @@ document.getElementById("year").textContent = new Date().getFullYear();
     });
   });
 })();
-
-// ============================================================
-// Project filter
-// ============================================================
-(function () {
-  const bar = document.getElementById("projectFilter");
-  const grid = document.getElementById("projectGrid");
-  if (!bar || !grid) return;
-  const buttons = bar.querySelectorAll(".filter");
-  const items = grid.querySelectorAll(".project");
-
-  buttons.forEach((b) => {
-    b.addEventListener("click", () => {
-      const key = b.dataset.filter;
-      buttons.forEach((x) => x.classList.toggle("is-active", x === b));
-      items.forEach((it) => {
-        const match = key === "all" || it.dataset.category === key;
-        it.classList.toggle("is-hidden", !match);
-      });
-    });
-  });
-})();

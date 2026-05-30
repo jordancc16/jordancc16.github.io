@@ -39,8 +39,11 @@
       </h1>
       <p class="hero-sub reveal">
         I am a high school student based in Taipei, Taiwan. I love chasing
-        the elegant idea hiding inside a hard problem — whether it's a math
-        proof, a chess position, or the strange order buried in chaos theory.
+        the elegant idea hiding inside a hard problem, then turning it into
+        a model that explains something real — from emergency evacuations to
+        ocean tides. The same instinct shows up whether I'm working a math
+        proof, reading a chess position, or untangling the order buried in
+        chaos theory.
       </p>
       <div class="hero-cta reveal">
         <a href="#work" class="btn btn-primary">See my work <span class="arrow">→</span></a>
@@ -240,93 +243,45 @@
         <h2 class="section-title">Selected Work</h2>
       </div>
 
-      <div class="filter-bar reveal" id="projectFilter">
-        <button class="filter is-active" data-filter="all">All</button>
-        <button class="filter" data-filter="web">Web</button>
-        <button class="filter" data-filter="tool">Tools</button>
-        <button class="filter" data-filter="oss">Open Source</button>
-      </div>
-
       <div class="projects" id="projectGrid">
-        <article class="project reveal" data-category="web">
+        <article class="project reveal">
           <div class="project-num">01</div>
           <div class="project-body">
-            <h3>[Project One]</h3>
+            <h3>Clearance-Time Modeling for Emergency Building Sweeps</h3>
             <p class="project-desc">
-              [What it does and why it matters — one or two sentences with
-              just enough detail to be interesting.]
+              Our team's solution to 2025 HiMCM Problem A. We modeled a
+              building as a weighted graph and derived a closed-form model
+              for how long it takes responders to fully sweep it during an
+              evacuation — splitting clearance time into travel, inspection,
+              and verification, then testing it across open, grid, radial,
+              and multi-floor layouts with a sensitivity analysis.
             </p>
             <ul class="tags">
-              <li>Next.js</li><li>TypeScript</li><li>Postgres</li>
+              <li>Mathematical modeling</li><li>Graph theory</li><li>Sensitivity analysis</li><li>HiMCM</li>
             </ul>
-            <div class="project-links">
-              <a href="#">Live <span class="arrow">↗</span></a>
-              <a href="#">Code <span class="arrow">↗</span></a>
-              <a href="#">Case study <span class="arrow">→</span></a>
-            </div>
-          </div>
-          <div class="project-art" aria-hidden="true">
-            <div class="art-stripe"></div>
-            <div class="art-stripe"></div>
-            <div class="art-stripe"></div>
-          </div>
-        </article>
-
-        <article class="project reveal" data-category="tool">
-          <div class="project-num">02</div>
-          <div class="project-body">
-            <h3>[Project Two]</h3>
-            <p class="project-desc">
-              [A CLI / dev tool you built. Mention a metric — downloads,
-              stars, time saved — if you have one.]
-            </p>
-            <ul class="tags">
-              <li>Go</li><li>CLI</li><li>OSS</li>
-            </ul>
-            <div class="project-links">
-              <a href="#">GitHub <span class="arrow">↗</span></a>
-              <a href="#">Docs <span class="arrow">↗</span></a>
-            </div>
-          </div>
-          <div class="project-art" aria-hidden="true">
-            <div class="art-grid"></div>
-          </div>
-        </article>
-
-        <article class="project reveal" data-category="web">
-          <div class="project-num">03</div>
-          <div class="project-body">
-            <h3>[Project Three]</h3>
-            <p class="project-desc">
-              [Another shipped project. Focus on the outcome, not the stack.]
-            </p>
-            <ul class="tags">
-              <li>React</li><li>tRPC</li><li>Tailwind</li>
-            </ul>
-            <div class="project-links">
-              <a href="#">Live <span class="arrow">↗</span></a>
-              <a href="#">Code <span class="arrow">↗</span></a>
-            </div>
           </div>
           <div class="project-art" aria-hidden="true">
             <div class="art-orbit"></div>
           </div>
         </article>
 
-        <article class="project reveal" data-category="oss">
-          <div class="project-num">04</div>
+        <article class="project reveal">
+          <div class="project-num">02</div>
           <div class="project-body">
-            <h3>[Project Four]</h3>
+            <h3>NLP + Finance</h3>
             <p class="project-desc">
-              [An open-source contribution or library. What problem does
-              it solve, who uses it.]
+              An Inspirit AI capstone exploring whether financial text can
+              help predict market movement. I worked with language models
+              and classifiers — BERT for understanding headlines, LSTMs for
+              sequential price data, and logistic regression as a baseline —
+              to compare how well each approach turned messy real-world data
+              into signal.
             </p>
             <ul class="tags">
-              <li>TypeScript</li><li>Library</li><li>npm</li>
+              <li>Python</li><li>BERT</li><li>LSTM</li><li>Logistic regression</li><li>NLP</li>
             </ul>
             <div class="project-links">
-              <a href="#">npm <span class="arrow">↗</span></a>
-              <a href="#">GitHub <span class="arrow">↗</span></a>
+              <a href="#">View slides <span class="arrow">→</span></a>
             </div>
           </div>
           <div class="project-art" aria-hidden="true">
@@ -334,24 +289,48 @@
           </div>
         </article>
 
-        <article class="project reveal" data-category="tool">
-          <div class="project-num">05</div>
+        <article class="project reveal">
+          <div class="project-num">03</div>
           <div class="project-body">
-            <h3>[Project Five]</h3>
+            <h3>Modeling the Tides of Victoria Harbour</h3>
             <p class="project-desc">
-              [Internal tool, VS Code extension, or hack-week project worth
-              showing off.]
+              An Honors Precalculus project fitting trigonometric functions
+              to 43 hours of real tide-height data from Hong Kong's Victoria
+              Harbour. I built a sinusoidal model by hand and checked it
+              against a Desmos regression, using R² to judge the fit and
+              capture how amplitude and period drift across the day.
             </p>
             <ul class="tags">
-              <li>VS Code</li><li>TypeScript</li>
+              <li>Trigonometric modeling</li><li>Regression</li><li>Desmos</li><li>Data fitting</li>
             </ul>
             <div class="project-links">
-              <a href="#">Marketplace <span class="arrow">↗</span></a>
-              <a href="#">Code <span class="arrow">↗</span></a>
+              <a href="#">Read write-up <span class="arrow">→</span></a>
             </div>
           </div>
           <div class="project-art" aria-hidden="true">
             <div class="art-wave"></div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-num">04</div>
+          <div class="project-body">
+            <h3>In Between — Card Game</h3>
+            <p class="project-desc">
+              A playable version of the card game In Between, built in Java
+              for AP Computer Science A. A full 52-card deck with suits and
+              ranks, plus the betting and game-state logic that decides
+              whether each draw lands "in between" the two face-up cards.
+            </p>
+            <ul class="tags">
+              <li>Java</li><li>OOP</li><li>Game logic</li>
+            </ul>
+            <div class="project-links">
+              <a href="#">View code <span class="arrow">↗</span></a>
+            </div>
+          </div>
+          <div class="project-art" aria-hidden="true">
+            <div class="art-grid"></div>
           </div>
         </article>
       </div>
