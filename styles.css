@@ -577,14 +577,15 @@ main {
 /* Project art */
 .project-art {
   position: relative;
-  width: 100%; height: 200px;
-  background: color-mix(in srgb, var(--fg) 6%, #fff);
+  width: 100%; height: 240px;
+  background: #fff;
   overflow: hidden;
   border-bottom: 1px solid var(--rule);
 }
 .project-shot {
   width: 100%; height: 100%;
   object-fit: contain;
+  padding: 0.5rem;
   display: block;
 }
 .art-stripe {
