@@ -358,6 +358,9 @@ main {
   box-shadow: var(--shadow);
   font-family: var(--mono);
   transition: transform 0.3s ease;
+  position: sticky;
+  top: 2rem;
+  align-self: start;
 }
 .about-card:hover { transform: translateY(-4px); }
 
