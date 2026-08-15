@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Chess Trainer thumbnail — a board with a tactics puzzle and a rating graph">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151b26"/>
+      <stop offset="1" stop-color="#0e131c"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6ea8fe" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6ea8fe" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="boardClip">
+      <rect x="56" y="66" width="368" height="368" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- board -->
+  <g clip-path="url(#boardClip)">
+    <rect x="56" y="66" width="368" height="368" fill="#edeed3"/>
+    <g fill="#779556">
+      <rect x="56"  y="66"  width="46" height="46"/><rect x="148" y="66"  width="46" height="46"/><rect x="240" y="66"  width="46" height="46"/><rect x="332" y="66"  width="46" height="46"/>
+      <rect x="102" y="112" width="46" height="46"/><rect x="194" y="112" width="46" height="46"/><rect x="286" y="112" width="46" height="46"/><rect x="378" y="112" width="46" height="46"/>
+      <rect x="56"  y="158" width="46" height="46"/><rect x="148" y="158" width="46" height="46"/><rect x="240" y="158" width="46" height="46"/><rect x="332" y="158" width="46" height="46"/>
+      <rect x="102" y="204" width="46" height="46"/><rect x="194" y="204" width="46" height="46"/><rect x="286" y="204" width="46" height="46"/><rect x="378" y="204" width="46" height="46"/>
+      <rect x="56"  y="250" width="46" height="46"/><rect x="148" y="250" width="46" height="46"/><rect x="240" y="250" width="46" height="46"/><rect x="332" y="250" width="46" height="46"/>
+      <rect x="102" y="296" width="46" height="46"/><rect x="194" y="296" width="46" height="46"/><rect x="286" y="296" width="46" height="46"/><rect x="378" y="296" width="46" height="46"/>
+      <rect x="56"  y="342" width="46" height="46"/><rect x="148" y="342" width="46" height="46"/><rect x="240" y="342" width="46" height="46"/><rect x="332" y="342" width="46" height="46"/>
+      <rect x="102" y="388" width="46" height="46"/><rect x="194" y="388" width="46" height="46"/><rect x="286" y="388" width="46" height="46"/><rect x="378" y="388" width="46" height="46"/>
+    </g>
+
+    <!-- the move being played: highlighted from and to squares -->
+    <rect x="56"  y="388" width="46" height="46" fill="#f6f36c" opacity="0.5"/>
+    <rect x="56"  y="66"  width="46" height="46" fill="#f6f36c" opacity="0.5"/>
+
+    <!-- legal-move dots -->
+    <g fill="#141414" opacity="0.22">
+      <circle cx="79" cy="342" r="7"/><circle cx="79" cy="296" r="7"/><circle cx="79" cy="250" r="7"/>
+      <circle cx="79" cy="204" r="7"/><circle cx="79" cy="158" r="7"/><circle cx="79" cy="112" r="7"/>
+    </g>
+
+    <!-- pieces: a back-rank mate -->
+    <g font-family="Georgia, 'Times New Roman', serif" font-size="40" text-anchor="middle">
+      <!-- black king g8, pawns f7 g7 h7 -->
+      <text x="355" y="103" fill="#24262b" stroke="#f0f0f0" stroke-width="1.2">&#9818;</text>
+      <text x="309" y="149" fill="#24262b" stroke="#f0f0f0" stroke-width="1.2">&#9823;</text>
+      <text x="355" y="149" fill="#24262b" stroke="#f0f0f0" stroke-width="1.2">&#9823;</text>
+      <text x="401" y="149" fill="#24262b" stroke="#f0f0f0" stroke-width="1.2">&#9823;</text>
+      <!-- white rook a1 (lifting to a8), white king g1 -->
+      <text x="79"  y="425" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.2">&#9820;</text>
+      <text x="355" y="425" fill="#ffffff" stroke="#2b2b2b" stroke-width="1.2">&#9812;</text>
+    </g>
+  </g>
+  <rect x="56" y="66" width="368" height="368" rx="10" fill="none" stroke="#293246" stroke-width="2"/>
+
+  <!-- side panel -->
+  <g>
+    <rect x="456" y="66" width="288" height="368" rx="12" fill="#1b2231" stroke="#293246" stroke-width="2"/>
+
+    <text x="480" y="106" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#e6ebf5">Find the best move</text>
+    <text x="480" y="132" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="14" fill="#94a1bb">P02 &#183; rated 550</text>
+
+    <!-- theme chips -->
+    <rect x="480" y="148" width="86" height="26" rx="13" fill="#2b4a7d"/>
+    <text x="523" y="166" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="12" fill="#e6ebf5" text-anchor="middle">mate in 1</text>
+    <rect x="574" y="148" width="88" height="26" rx="13" fill="#2b4a7d"/>
+    <text x="618" y="166" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="12" fill="#e6ebf5" text-anchor="middle">back rank</text>
+
+    <!-- status -->
+    <rect x="480" y="192" width="3" height="30" fill="#7bd88f"/>
+    <text x="496" y="213" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#7bd88f">Solved! Textbook.</text>
+
+    <!-- rating graph -->
+    <text x="480" y="256" font-family="system-ui, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#94a1bb" letter-spacing="1.4">RATING</text>
+    <rect x="480" y="266" width="240" height="96" rx="8" fill="#10141c" stroke="#293246" stroke-width="1.5"/>
+    <path d="M494 344 L 524 336 L 554 340 L 584 318 L 614 322 L 644 300 L 674 292 L 706 278 L 706 350 L 494 350 Z" fill="url(#spark)"/>
+    <path d="M494 344 L 524 336 L 554 340 L 584 318 L 614 322 L 644 300 L 674 292 L 706 278" fill="none" stroke="#6ea8fe" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+
+    <!-- stat tiles -->
+    <g font-family="system-ui, Segoe UI, Arial, sans-serif" text-anchor="middle">
+      <rect x="480" y="378" width="74" height="44" rx="8" fill="#10141c" stroke="#293246" stroke-width="1.5"/>
+      <text x="517" y="399" font-size="18" font-weight="700" fill="#e6ebf5">1240</text>
+      <text x="517" y="414" font-size="10" fill="#94a1bb">rating</text>
+
+      <rect x="563" y="378" width="74" height="44" rx="8" fill="#10141c" stroke="#293246" stroke-width="1.5"/>
+      <text x="600" y="399" font-size="18" font-weight="700" fill="#e6ebf5">86%</text>
+      <text x="600" y="414" font-size="10" fill="#94a1bb">first try</text>
+
+      <rect x="646" y="378" width="74" height="44" rx="8" fill="#10141c" stroke="#293246" stroke-width="1.5"/>
+      <text x="683" y="399" font-size="18" font-weight="700" fill="#e6ebf5">7</text>
+      <text x="683" y="414" font-size="10" fill="#94a1bb">streak</text>
+    </g>
+  </g>
+</svg>
