@@ -266,15 +266,16 @@
             <p class="project-desc">
               A chess trainer built from scratch — no chess library and no
               engine binary. I wrote the move generator, the search and the
-              evaluation myself: 52 rated tactics puzzles across nine
-              categories, including positions from the Opera Game and the
-              Immortal Game, plus Puzzle Rush and a board-vision drill, ten
-              opening lines, and an opponent that searches with alpha-beta
-              pruning. The move generator is verified with perft against
-              published reference counts, and every puzzle is machine-checked —
-              the position has to be reachable, claimed mates are proved forced
-              against any defence, and the engine has to agree the solution is
-              both best and unique.
+              evaluation myself. 218 rated tactics puzzles across ten
+              categories, 179 of them mined out of real master games with
+              Stockfish and credited to the players, plus Puzzle Rush, a
+              board-vision drill, ten opening lines, and an opponent that
+              searches with alpha-beta pruning. The move generator is verified
+              with perft against published reference counts, and every single
+              puzzle is machine-checked: the position has to be reachable, the
+              solution has to be the unique best move, the defence has to be the
+              engine's best rather than a cooperative one, and the position it
+              leaves behind has to be genuinely won.
             </p>
             <ul class="tags">
               <li>JavaScript</li><li>Game engine</li><li>Search algorithms</li><li>Web app</li><li>Testing</li>
