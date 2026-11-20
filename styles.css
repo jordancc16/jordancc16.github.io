@@ -698,6 +698,32 @@ main {
 .t-co { color: var(--muted); font-weight: 500; }
 .t-what p { margin: 0; color: var(--fg-soft); }
 
+.t-bullets {
+  list-style: none;
+  margin: 0.7rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+.t-bullets li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--fg-soft);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.t-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.62em;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.75;
+}
+
+.edu-extra { margin-top: 0.5rem; }
+
 /* ============================================================
    Contact
 ============================================================ */

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Transit access model: 500 metre walk-shed buffers around stops, with a weighted ranking of ten cities">
+  <defs>
+    <linearGradient id="ta-band" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c4a7d"/>
+      <stop offset="0.55" stop-color="#1c5a5a"/>
+      <stop offset="1" stop-color="#3b6ea5"/>
+    </linearGradient>
+    <linearGradient id="ta-paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f6f9"/>
+      <stop offset="1" stop-color="#e2e9ef"/>
+    </linearGradient>
+    <radialGradient id="ta-buffer">
+      <stop offset="0" stop-color="#3b82c4" stop-opacity="0.42"/>
+      <stop offset="0.72" stop-color="#3b82c4" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#3b82c4" stop-opacity="0.05"/>
+    </radialGradient>
+    <clipPath id="ta-map"><rect x="0" y="70" width="470" height="430"/></clipPath>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#ta-paper)"/>
+
+  <!-- ===== left: walk-shed map ===== -->
+  <g clip-path="url(#ta-map)">
+    <!-- population density blocks -->
+    <g fill="#c3cfd9" opacity="0.5">
+      <rect x="20" y="110" width="58" height="58"/>   <rect x="86" y="110" width="58" height="58" opacity="0.6"/>
+      <rect x="152" y="110" width="58" height="58"/>  <rect x="218" y="110" width="58" height="58" opacity="0.45"/>
+      <rect x="284" y="110" width="58" height="58" opacity="0.8"/>
+      <rect x="20" y="176" width="58" height="58" opacity="0.7"/>  <rect x="86" y="176" width="58" height="58"/>
+      <rect x="152" y="176" width="58" height="58" opacity="0.5"/> <rect x="218" y="176" width="58" height="58" opacity="0.9"/>
+      <rect x="284" y="176" width="58" height="58" opacity="0.55"/>
+      <rect x="20" y="242" width="58" height="58" opacity="0.45"/> <rect x="86" y="242" width="58" height="58" opacity="0.75"/>
+      <rect x="152" y="242" width="58" height="58" opacity="0.95"/><rect x="218" y="242" width="58" height="58" opacity="0.6"/>
+      <rect x="284" y="242" width="58" height="58"/>
+      <rect x="20" y="308" width="58" height="58" opacity="0.6"/>  <rect x="86" y="308" width="58" height="58" opacity="0.4"/>
+      <rect x="152" y="308" width="58" height="58" opacity="0.7"/> <rect x="218" y="308" width="58" height="58" opacity="0.85"/>
+      <rect x="284" y="308" width="58" height="58" opacity="0.5"/>
+      <rect x="20" y="374" width="58" height="58" opacity="0.85"/> <rect x="86" y="374" width="58" height="58" opacity="0.55"/>
+      <rect x="152" y="374" width="58" height="58" opacity="0.45"/><rect x="218" y="374" width="58" height="58" opacity="0.7"/>
+      <rect x="284" y="374" width="58" height="58" opacity="0.6"/>
+    </g>
+
+    <!-- street grid -->
+    <g stroke="#ffffff" stroke-width="3" opacity="0.85">
+      <path d="M0 168 H470"/><path d="M0 234 H470"/><path d="M0 300 H470"/><path d="M0 366 H470"/>
+      <path d="M78 70 V500"/><path d="M144 70 V500"/><path d="M210 70 V500"/><path d="M276 70 V500"/><path d="M342 70 V500"/>
+    </g>
+
+    <!-- transit lines -->
+    <path d="M-10 350 C 90 320, 150 200, 260 170 S 420 120, 500 150" fill="none" stroke="#c64034" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+    <path d="M30 120 C 120 210, 190 260, 300 300 S 420 380, 490 430" fill="none" stroke="#2f7d4f" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+
+    <!-- 500 m walk-shed buffers -->
+    <g>
+      <circle cx="78"  cy="328" r="62" fill="url(#ta-buffer)" stroke="#2b6cab" stroke-width="2" stroke-dasharray="7 6"/>
+      <circle cx="192" cy="196" r="62" fill="url(#ta-buffer)" stroke="#2b6cab" stroke-width="2" stroke-dasharray="7 6"/>
+      <circle cx="300" cy="154" r="62" fill="url(#ta-buffer)" stroke="#2b6cab" stroke-width="2" stroke-dasharray="7 6"/>
+      <circle cx="148" cy="258" r="62" fill="url(#ta-buffer)" stroke="#2b6cab" stroke-width="2" stroke-dasharray="7 6"/>
+      <circle cx="300" cy="300" r="62" fill="url(#ta-buffer)" stroke="#2b6cab" stroke-width="2" stroke-dasharray="7 6"/>
+      <circle cx="396" cy="406" r="62" fill="url(#ta-buffer)" stroke="#2b6cab" stroke-width="2" stroke-dasharray="7 6"/>
+    </g>
+
+    <!-- stops -->
+    <g fill="#14365c" stroke="#ffffff" stroke-width="3.5">
+      <circle cx="78"  cy="328" r="9"/><circle cx="192" cy="196" r="9"/><circle cx="300" cy="154" r="9"/>
+      <circle cx="148" cy="258" r="9"/><circle cx="300" cy="300" r="9"/><circle cx="396" cy="406" r="9"/>
+    </g>
+
+    <!-- radius callout -->
+    <g>
+      <path d="M148 258 L210 258" stroke="#14365c" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="148" cy="258" r="3" fill="#14365c"/>
+      <rect x="156" y="222" width="86" height="28" rx="14" fill="#ffffff" opacity="0.95"/>
+      <text x="199" y="241" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#14365c">500 m</text>
+    </g>
+  </g>
+
+  <!-- ===== right: weighted city ranking ===== -->
+  <g transform="translate(492,96)">
+    <rect x="0" y="0" width="288" height="386" rx="14" fill="#ffffff" opacity="0.96" stroke="#cdd8e2"/>
+    <text x="20" y="34" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#14365c">WEIGHTED SCORE — 10 CITIES</text>
+    <text x="20" y="54" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12.5" fill="#5b6b7a">six criteria · 10,000 Monte Carlo draws</text>
+
+    <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12.5" fill="#5b6b7a">
+      <!-- bars: value bar + Monte Carlo uncertainty whisker -->
+      <g transform="translate(20,78)">
+        <rect x="0" y="0"  width="214" height="17" rx="8.5" fill="#eef2f6"/><rect x="0" y="0"  width="198" height="17" rx="8.5" fill="#1c4a7d"/>
+        <rect x="0" y="31" width="214" height="17" rx="8.5" fill="#eef2f6"/><rect x="0" y="31" width="176" height="17" rx="8.5" fill="#24598f"/>
+        <rect x="0" y="62" width="214" height="17" rx="8.5" fill="#eef2f6"/><rect x="0" y="62" width="159" height="17" rx="8.5" fill="#2b6cab"/>
+        <rect x="0" y="93" width="214" height="17" rx="8.5" fill="#eef2f6"/><rect x="0" y="93" width="141" height="17" rx="8.5" fill="#3b82c4"/>
+        <rect x="0" y="124" width="214" height="17" rx="8.5" fill="#eef2f6"/><rect x="0" y="124" width="124" height="17" rx="8.5" fill="#5a9bd4"/>
+        <rect x="0" y="155" width="214" height="17" rx="8.5" fill="#eef2f6"/><rect x="0" y="155" width="106" height="17" rx="8.5" fill="#79b0de"/>
+        <rect x="0" y="186" width="214" height="17" rx="8.5" fill="#eef2f6"/><rect x="0" y="186" width="88"  height="17" rx="8.5" fill="#95c2e6"/>
+        <rect x="0" y="217" width="214" height="17" rx="8.5" fill="#eef2f6"/><rect x="0" y="217" width="71"  height="17" rx="8.5" fill="#a9cdec"/>
+        <rect x="0" y="248" width="214" height="17" rx="8.5" fill="#eef2f6"/><rect x="0" y="248" width="55"  height="17" rx="8.5" fill="#bdd8f1"/>
+        <rect x="0" y="279" width="214" height="17" rx="8.5" fill="#eef2f6"/><rect x="0" y="279" width="38"  height="17" rx="8.5" fill="#d0e3f5"/>
+
+        <!-- uncertainty whiskers from the weight draws -->
+        <g stroke="#14365c" stroke-width="2" opacity="0.55" stroke-linecap="round">
+          <path d="M186 8.5  H210"/><path d="M164 39.5 H190"/><path d="M146 70.5 H173"/><path d="M129 101.5 H154"/>
+          <path d="M112 132.5 H137"/><path d="M94 163.5 H119"/><path d="M77 194.5 H100"/><path d="M60 225.5 H83"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- header band -->
+  <rect x="0" y="0" width="800" height="70" fill="url(#ta-band)"/>
+  <text x="28" y="45" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27" font-weight="800" fill="#ffffff">Transit Access &amp; City Ranking</text>
+  <text x="772" y="45" text-anchor="end" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#cfe2f4">HiMCM 2026</text>
+</svg>
